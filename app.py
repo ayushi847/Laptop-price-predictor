@@ -17,7 +17,7 @@ df_path = os.path.join(BASE_DIR, 'df.pkl')
 pipe = pickle.load(open(pipe_path, 'rb'))
 df = pickle.load(open(df_path, 'rb'))
 
-st.title("💻 Laptop Price Predictor (DEBUG MODE)")
+st.title(" Laptop Price Predictor")
 
 # -------------------------
 # NORMALIZE COLUMN NAMES (IMPORTANT FIX)
