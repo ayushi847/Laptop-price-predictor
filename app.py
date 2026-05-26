@@ -6,8 +6,16 @@ import pandas as pd
 # -------------------------
 # LOAD MODEL
 # -------------------------
-pipe = pickle.load(open('pipe.pkl', 'rb'))
-df = pickle.load(open('df.pkl', 'rb'))
+import os
+import pickle
+
+BASE_DIR = os.path.dirname(__file__)
+
+pipe_path = os.path.join(BASE_DIR, 'pipe.pkl')
+df_path = os.path.join(BASE_DIR, 'df.pkl')
+
+pipe = pickle.load(open(pipe_path, 'rb'))
+df = pickle.load(open(df_path, 'rb'))
 
 st.title("💻 Laptop Price Predictor (DEBUG MODE)")
 
